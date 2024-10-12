@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../style/loginSignup.css">
+
+  <title>LogIn</title>
+</head>
+
+<body>
+  <button class="return-button" onclick="window.location.href='http://localhost:8989/';">Return</button>
+
+  <h2>LogIn Form</h2>
+
+  {{if .Error}}
+  <p class="error">{{.Error}}</p>
+  {{end}}
+
+  <form action="/login" method="POST">
+    <label for="userOremail">Enter your Username or Email:</label>
+    <input type="text" id="userOremail" name="userOremail" required>
+    
+    <label for="pass">Password:</label>
+    <input type="password" placeholder="Password" id="pass" name="pass" required>
+    <input type="submit" value="Submit">
+  </form> 
+
+  <!-- Button to redirect to the sign-up page -->
+  <p>Don't have an account?</p>
+  <form action="/signUp" method="GET">
+    <input type="submit" class="sign-up-button" value="Sign Up">
+  </form>
+</body>
+</html>

@@ -1,0 +1,187 @@
+body {
+    margin-top: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #000000;
+    display: flex; /* Use flexbox for layout */
+}
+
+.sidebar {
+    width: 150px;
+    background-color: #1f1f1f;
+    color: white;
+    position: fixed; /* Keep sidebar fixed */
+    height: 100vh; /* Full height */
+    padding-top: 20px; /* Space at the top */
+    z-index: 2;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+}
+
+.left-sidebar {
+    left: 0; /* Align left sidebar to the left */
+}
+
+.right-sidebar {
+    right: 0; /* Align right sidebar to the right */
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #000000;
+}
+
+.sidebar h2{
+    text-align: center;
+}
+
+.dropdown {
+    display: none; /* Initially hidden */
+    padding-left: 20px; /* Indent for sub-options */
+}
+
+.Submit{
+    background-color: #000000; /* Black button */
+    color: #ffffff; /* White text */
+    padding: 10px; /* Adjust padding for height */
+    text-align: center; /* Center text within button */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    float: right;
+}
+.Submit:hover {
+    background-color: #555555; /* Dark gray on hover */
+}
+
+textarea {
+    width: 260px; /* Full width */
+    height: 30px; /* Height for the textarea */
+    font-size: 1em; /* Font size */
+    border: 2px solid #ced4da; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f8f9fa; /* Light gray background */
+    color: #495057; /* Darker text color */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+    resize: none; /* Prevent resizing */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+textarea:focus {
+    border-color: #000000; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Glow effect on focus */
+    outline: none; /* Remove default outline */
+}
+
+
+.space{
+padding: 5px;
+}
+
+.comment-item {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 5px; /* Space between comments */
+}
+
+.LikeDis {
+    background-color: #000000; /* Black button */
+    color: #ffffff; /* White text */
+    padding: 5px; /* Adjust padding for height */
+    text-align: center; /* Center text within button */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+   
+    margin-left: 10px; /* Space between comment text and like button */
+}
+.LikeDis:hover {
+    background-color: #555555; /* Dark gray on hover */
+}
+
+
+.LikeDisComm{
+    background-color: #000000; /* Black button */
+    color: #ffffff; /* White text */
+    text-align: center; /* Center text within button */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 5px;
+}
+.LikeDisComm:hover {
+    background-color: #555555; /* Dark gray on hover */
+}
+
+/* Main container */
+.container {
+    margin-top: 10px;
+    padding: 20px; /* Padding for the container */
+    max-width: 500px; /* Max width for content */
+    margin-left: auto;
+    margin-right: auto;
+    background: #f4f4f4; /* Light gray background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+.comment {
+    background-color: #ffffff; /* White background for comments */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post {
+    display: block; /* Ensure each post is a block element */
+    width: 100%; /* Make post take the full width of the container */
+    margin-bottom: 20px; /* Space between posts */
+}
+
+small {
+    color: #888;
+    font-size: 0.875rem; 
+    display: block; 
+    margin-top: 0.5rem; 
+}
+
+
+
+.button {
+    background-color: #000000; /* Black button */
+    color: #ffffff; /* White text */
+    padding: 10px; /* Adjust padding for height */
+    text-align: center; /* Center text within button */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Make button full width */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    max-width: 300px; /* Max width for the button */
+}
+
+.button:hover {
+    background-color: #555555; /* Dark gray on hover */
+}
+
+.material-icons {
+    cursor: pointer;
+    color: gray;
+}
+

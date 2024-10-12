@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../style/newPost.css">
+
+    <title>Create a New Post</title>
+
+</head>
+
+<body>
+    <button class="return-button" onclick="window.history.back();">Return</button>
+    <div class="container">
+        <h1>Create a New Post</h1>
+        
+        <form action="/post" method="POST">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+            
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" rows="6" required></textarea>
+
+            <label for="category">Category:</label>
+
+                <label>
+                    <input type="checkbox" name="category" value="Nature"> Nature
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="Food"> Food
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="Sport"> Sport
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="Travel"> Travel
+                </label>
+            <br>
+            <input type="submit" value="Post it" class="button">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+body {
+    margin-top: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #000000;
+    display: flex; /* Use flexbox for layout */
+}
+
+.sidebar {
+    width: 150px;
+    background-color: #1f1f1f;
+    color: white;
+    position: fixed; /* Keep sidebar fixed */
+    height: 100vh; /* Full height */
+    padding-top: 20px; /* Space at the top */
+    z-index: 2;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+}
+
+.left-sidebar {
+    left: 0; /* Align left sidebar to the left */
+}
+
+.right-sidebar {
+    right: 0; /* Align right sidebar to the right */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items */
+    text-align: center; /* Center text */
+    width: calc(100% - 300px); /* Full width minus both sidebars */
+    margin: 0 auto; /* Center horizontally */
+}
+
+.logo {
+    margin: 0px 0 15px 50px; /* Reduced margin above the logo */
+}
+
+.logo img {
+    max-width: 150px; /* Control logo size */
+    max-height: 150px; /* Control logo size */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Space between buttons */
+    width: 100%; /* Full width for buttons */
+    max-width: 300px; /* Max width for buttons container */
+}
+
+.button {
+    background-color: #000000; /* Black button */
+    color: #ffffff; /* White text */
+    padding: 10px; /* Adjust padding for height */
+    margin-left: 10px;
+    text-align: center; /* Center text within button */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Make button full width */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Match font size */
+}
+
+.button:hover {
+    background-color: #555555; /* Dark gray on hover */
+}
+
+.return-button {
+    position: absolute; /* Position it relative to the body */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    background-color: #000000; /* White background */
+    color: #ffffff; /* Black text */
+    border: 1px solid #000000; /* Light gray border */
+    padding: 8px 12px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.return-button:hover {
+    background-color: #555555; /* Dark gray on hover */
+}
+
+small {
+    color: #888;
+    font-size: 0.875rem; 
+    display: block; 
+    margin-top: 0.5rem; 
+}

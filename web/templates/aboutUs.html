@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../style/styleMain.css">
+  <title>About Us</title>
+</head>
+
+<style>
+  /* Basic styles */
+  body, h2, h4, p {
+      margin: 0;
+      padding: 0;
+  }
+
+  /* General styles */
+  body {
+      margin-top: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #ffffff; /* White background */
+      color: #000000; /* Black text */
+      display: flex; /* Use flexbox for layout */
+      flex-direction: column;
+      align-items: center; /* Center items horizontally */
+  }
+
+  /* Button styles */
+  .return-button {
+      margin: 20px;
+      padding: 10px 15px;
+      background-color: #000000; /* Black button */
+      color: #ffffff; /* White text */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+  }
+
+  .return-button:hover {
+      background-color: #555555; /* Dark gray on hover */
+  }
+
+  /* Container styles */
+  .container {
+      margin-top: 10px;
+      padding: 20px; /* Padding for the container */
+      max-width: 800px; /* Max width for content */
+      background: #f4f4f4; /* Light gray background */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .box {
+      padding: 20px;
+      width: 100%;
+  }
+
+  /* Headings */
+  h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+  }
+
+  h4 {
+      font-size: 18px;
+      margin-top: 15px;
+      margin-bottom: 5px;
+  }
+
+  /* Paragraph styles */
+  p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+  }
+</style>
+
+<body>
+  <button class="return-button" onclick="window.location.href='http://localhost:8989/';">Return</button>
+  <div class="container">
+      <div class="box">
+          <h2>About This Site</h2>
+          <p>We are a group of 5 that created a site that does the following:</p>
+          <h4>Technology Stack</h4>
+          <p>We use <strong>SQLite</strong> to store data like users, posts, and comments. SQLite is a popular choice for local storage in web applications.</p>
+
+          <h4>Authentication</h4>
+          <p>Users can register and log in, creating a session with cookies. Passwords are securely stored and checked against the database.</p>
+
+          <h4>Communication Features</h4>
+          <p>Only registered users can create posts and comments, which are visible to all users. Non-registered users can view posts and comments.</p>
+
+          <h4>Likes and Dislikes</h4>
+          <p>Registered users can like or dislike posts and comments, with visibility for all users.</p>
+
+          <h4>Filtering Options</h4>
+          <p>Users can filter displayed posts by categories, created posts, and liked posts.</p>
+
+          <h4>Containerization</h4>
+          <p>We utilize <strong>Docker</strong> to manage our application environment.</p>
+      </div>
+  </div>
+</body>
+</html>

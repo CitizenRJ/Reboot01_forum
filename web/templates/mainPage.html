@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../style/styleMain.css">
+    <title>Welcome Page</title>
+</head>
+
+<body>
+    <div class="sidebar left-sidebar"></div>
+
+    <div class="container">
+        <div class="right-side">
+            <div class="logo">
+                <img src="../../style/logo.png" alt="Logo" style="max-width: 200px;">
+            </div>
+            <div class="buttons">
+                {{if .Log}}
+                  <a href="/logout" class="button">Logout</a>
+                <a href="/postsPage" class="button">Posts</a>
+                {{else}}
+                 <a href="/signUp" class="button">Sign Up</a>
+                <a href="/logIn" class="button">Log In</a>
+                <a href="/postsPage" class="button">Continue as Guest</a>
+                {{end}}
+                <a href="/aboutUs" class="button">About us</a> 
+            </div>
+        </div>
+    </div>
+    <div class="sidebar right-sidebar"></div> <!-- Empty right sidebar -->
+</body>
+</html>
+
